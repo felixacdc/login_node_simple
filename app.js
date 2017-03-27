@@ -4,6 +4,7 @@ const express = require('express'),
 	bodyParser = require('body-parser'),
 	expressSession = require('express-session'),
 	cookieParser = require('cookie-parser'),
+	flash = require('express-flash'),
 	api = require("./lib/routes.js");
 
 function checkAuth (req, res, next) {
@@ -19,6 +20,7 @@ function checkAuth (req, res, next) {
 
 app.use(cookieParser());
 app.use(expressSession({secret:'example'}));
+app.use(flash());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(checkAuth);
