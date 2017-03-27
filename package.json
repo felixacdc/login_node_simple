@@ -1,0 +1,24 @@
+{
+  "name": "login_node_simple",
+  "version": "1.0.0",
+  "description": "Login básico en node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixacdc/login_node_simple.git"
+  },
+  "author": "Félix Méndez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixacdc/login_node_simple/issues"
+  },
+  "homepage": "https://github.com/felixacdc/login_node_simple#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jade": "^1.11.0"
+  }
+}
